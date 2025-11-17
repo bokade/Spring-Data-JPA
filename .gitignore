@@ -31,3 +31,31 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# generated
+bin/
+build/
+
+# Lombok (not required but safe)
+config/
+
+# local env / credentials
+*.env
+/application-local.properties
