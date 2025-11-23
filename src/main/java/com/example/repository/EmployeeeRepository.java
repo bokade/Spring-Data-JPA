@@ -12,6 +12,7 @@ public interface EmployeeeRepository  extends JpaRepository<Employeee, Long> {
     // 1️⃣ Interface Projection
     List<EmployeeNameProjection> findByDepartment(String department);
 
+
     // 2️⃣ DTO via constructor expression (custom query)
     @Query("SELECT new com.example.dto.EmployeeDTO(e.id, e.fullName, e.department) FROM Employeee e")
     List<com.example.dto.EmployeeDTO> getAllEmployeeDTOs();
